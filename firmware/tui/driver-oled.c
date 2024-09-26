@@ -42,7 +42,7 @@ oled_init(ps_tui_t *tui)
 
     // broadcasts not supported, we assume that address 0 means "use default"
     if (tui->oled.i2c_address == 0)
-        tui->oled.i2c_address = 0x3C;
+        tui->oled.i2c_address = 0x78;
 
     // we need to copy render commands because we change them when rendering
     // every ram page, and this would cause race conditions when running more
